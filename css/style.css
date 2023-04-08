@@ -372,6 +372,7 @@ footer {
 
 /* Mobile */
 @media (max-width: 320px) {
+
 .logo {
 	width: 100%;
 	text-align: center;
@@ -390,6 +391,7 @@ footer {
 	display: none;
 }
 header nav ul {
+	display: none;
 }
 nav ul li {
 	margin-top: 0px;

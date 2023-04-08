@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <!-- Main Container -->
     <div class="container">
         <!-- Navigation -->
@@ -31,7 +32,7 @@
         <header>
             <div>
                 <div class="header-banner"> <h2> CMOMM4FAIR 2023</h1></div>
-                <nav class="navbar">
+                <nav class="navbar"  id="myNavbar">
                     <ul>
                         <!-- <li><a href="#cmomm4fair" class="navbar-link">Content</a></li> -->
                         <li><a href="#important-dates" class="navbar-link">Important Dates</a></li>
@@ -210,6 +211,20 @@
 
     </div>
     <!-- Main Container Ends -->
+    <script>
+        function hideNavbarOnMobile() {
+          var navbar = document.getElementById("myNavbar"); // Replace "myNavbar" with the actual ID of your navbar element
+          var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+          if (screenWidth <= 768) { // Adjust the screen width threshold to your desired breakpoint
+            navbar.style.display = "none";
+          } else {
+            navbar.style.display = "block";
+          }
+        }
+    
+        window.addEventListener("load", hideNavbarOnMobile); // Call the function on page load
+        window.addEventListener("resize", hideNavbarOnMobile); // Call the function on window resize
+      </script>
 </body>
 
 </html>
